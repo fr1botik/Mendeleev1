@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context="com.example.myapplication.LogoActivity">
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="391dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="56dp"
+        android:autoStart="true"
+        android:flipInterval="1500"
+        android:foregroundGravity="center"
+        android:inAnimation="@anim/flipin"
+        android:outAnimation="@anim/flipout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mendeleev"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mendeleev" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/al" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/be" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ir" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/h" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cm" />
+    </ViewFlipper>
+
+    <com.hanks.htextview.typer.TyperTextView
+        android:id="@+id/typer"
+        android:layout_width="364dp"
+        android:layout_height="184dp"
+        android:layout_marginBottom="236dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:charIncrease="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:typerSpeed="100" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
